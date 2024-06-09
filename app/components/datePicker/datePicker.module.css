@@ -1,0 +1,61 @@
+.dayPickerToday {
+    background-color:white;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.dayPickerSelected {
+    background-color: rgba(255, 64, 0, 0.7)
+}
+
+.dayPickerDisabled {
+    background-color:darkslategrey;
+    color: ghostwhite;
+}
+
+.footerDesign {
+    border-radius: 2em;
+    text-align: center;
+    margin-top: 0.5em;
+    border: 1px solid darkslategrey;
+}
+
+.festivalDays {
+    background-color: rgb(0, 255, 187, 0.7)
+}
+
+.linkedDays {
+    background-color: rgb(255, 153, 0, 0.7)
+}
+
+
+.bookedDays {
+    position: relative;
+}
+/* Strikeout */
+.bookedDays::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: currentColor;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+
+.dateStyle {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.cellStyle {
+    height: 3em;
+    width: 4em;
+    padding: 1em
+}
+
+.festivalStyle {
+    background-color: lightblue;
+}
